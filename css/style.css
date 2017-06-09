@@ -36,35 +36,103 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    font-family: 'Raleway', sans-serif;
 }
 
-
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-@@font-face {
-  font-family: "Raleway"
-  src: local("Raleway"), url("../raleway/raleway-black-webfront.woff"), format("woff");
-}
+/* ======================================================== */
+/* global class */
+/* ======================================================== */
 .container{
     width:1060px;
     margin: 0 auto;
 }
-.main-menu-options .main-menu-options-elm {
-    display: inline-block;
-    margin: 5px;
+/* ======================================================== */
+/* layout */
+/* ======================================================== */
+/* ======================================================== */
+/* header */
+/* ======================================================== */
+.page-header{
+    background-color: black;
+    height: 40px;
+
 }
-.main-menu-options{
-    list-style:none;
+.page-logo{
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+}
+.page-logo span{
+    color: rgba(0, 200, 170, 1);
+    font-size: 12px;
+    font-weight: 700;
+}
+.page-nav{
     float: right;
-    position: relative;
-    background-color: #fff;
+
+}
+.page-nav ul{
+    text-align: right;
+}
+.page-nav li{
+    display: inline-block;
+    position:relative;
 }
 
-header{
+.page-nav li a{
+    text-decoration: none;
+    display:block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.page-nav-sublist{
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    background: #000;
+    width: 150px;
+    padding: 10px 0;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s opacity, 0.5s top;
+}
+.page-nav-sublist:before{
+    content:"";
+    width:0;
+    height:0;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+}
+.page-nav-sublist li{
+    display: block;
+    text-align: left;
+}
+.page-nav-sublist li a{
+    text-transform: none;
+    font-weight: normal;
+    line-height: 32px;
+}
+.page-nav li:hover .page-nav-sublist{
+    opacity: 1;
+    visibility: visible;
+    top: 55px;
+}
+
+/* ======================================================== */
+/* section with (potential) slider */
+/* ======================================================== */
+.page-sect-title{
   width: 100%;
   height: 500px;
   background: #f8f9fa;
@@ -72,4 +140,9 @@ header{
     background: -o-linear-gradient(#f8f9fa 0%, #d2d1db 100%);
     background: linear-gradient(#f8f9fa 0%, #d2d1db 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#d2d1db',GradientType=0 );
+}
+.page-sect-title-image .page-sect-title-text{
+    display: inline-block;
+    width: 50%;
+
 }
