@@ -132,17 +132,128 @@ html {
 /* ======================================================== */
 /* section with (potential) slider */
 /* ======================================================== */
-.page-sect-title{
+.main-slider-big{
   width: 100%;
-  height: 500px;
   background: #f8f9fa;
     background: -webkit-linear-gradient(#f8f9fa 0%, #d2d1db 100%);
     background: -o-linear-gradient(#f8f9fa 0%, #d2d1db 100%);
     background: linear-gradient(#f8f9fa 0%, #d2d1db 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#d2d1db',GradientType=0 );
-}
-.page-sect-title-image .page-sect-title-text{
     display: inline-block;
-    width: 50%;
+}
+.main-slider{
+    position: relative;
+     height: 500px;
+}
+.main-slider-button-L{
+    width:40px;
+    height: 500px;
+    position: absolute;
+    background: transparent;
+    border: 0px solid transparent;
+    font-size: 50px;
+    vertical-align: middle;
+    color: rgba(0, 200, 170, 1);
+    outline: none;
+    left:0;
+    top:0;
 
+
+}
+.main-slider-button-R{
+    width:40px;
+    height: 500px;
+    position: absolute;
+    background: transparent;
+    border: 0px solid transparent;
+    font-size: 50px;
+    vertical-align: middle;
+    color: rgba(0, 200, 170, 1);
+    outline: none;
+    text-align: right;
+    right: 0;
+    top: 0;
+
+
+}
+.main-slider-image {
+    width: 50%;
+    float: left;
+    vertical-align: middle;
+    margin-top: 70px;
+
+}
+
+.main-slider-text{
+    width: 50%;
+    float: right;
+    padding: 100px;
+}
+.main-slider-text p{
+    text-align: center;
+}
+.main-slider-text h2{
+    text-align: center;
+}
+.main-slider .container{
+    position:relative;
+}
+.main-slider-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-slider-title span{
+    color: rgba(0, 200, 170, 1);
+}
+.page-sect-title-button{
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(0, 200, 170, 1);
+    color: #fff;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 65px;
+    position: absolute;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    padding: 20px;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+/* ======================================================== */
+/* section with products */
+/* ======================================================== */
+.products{
+    height:350px;
+}
+.main-section-box{
+    display: inline-block;
+    float: left;
+}
+
+/* ======================================================== */
+/* section with prices */
+/* ======================================================== */
+
+.prices{
+    height: 725px;
+    background: rgba(240, 241, 242, 1);
+}
+/* ======================================================== */
+/* section with contact */
+/* ======================================================== */
+.contact{
+    height: 565px;
+}
+/* ======================================================== */
+/* footer */
+/* ======================================================== */
+.main-footer{
+    height: 90px;
 }

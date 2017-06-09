@@ -40,19 +40,27 @@
             </nav>
             </div>
         </header>
-        <section class='page-sect-title'>
+
+        <section class='main-slider-big'>
             <div class='container'>
-                <div class='page-sect-title-image'>
-                    <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/black_chair.png">
-                </div>
-                <div class='page-sect-title-text'>
-                    <h2>Sit on our chair</h2>
-                    <p>Lorem ipsum dolor sit amet enim. </p>
-                    <button type="submit" class='page-sect-title-button'>Zobacz więcej</button>
+                <div class='main-slider'>
+                    <button class="main-slider-button-L">&lt</button><!--absolute-->
+                    <div class="main-slider-content"><!--relative-->
+                        <div class='main-slider-image'>
+                            <img src="img/black_chair.png">
+                        </div>
+                        <div class='main-slider-text'>
+                            <h2 class='main-slider-title'>Sit <span>on</span> our <span>chair</span></h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                            <a href='' class='page-sect-title-button'>Zobacz więcej</a>
+                        </div>
+                    </div>
+                    <button class="main-slider-button-R">&gt</button><!--absolute-->
                 </div>
             </div>
         </section>
-        <section class='main-section'>
+
+        <section class='products'>
             <div class='container'>
                 <div class='main-section-box'>
                     <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box1_img.jpg">
@@ -60,9 +68,14 @@
                 <div class='main-section-box'>
                     <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box2_img.jpg">
                 </div>
-                <div class='main-section-box'></div>
+                <div class='main-section-box'>
+                    <h3>FInd all imputs</h3>
+                    <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
+                    <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
+                </div>
             </div>
         </section>
+
         <section class='prices'>
             <div class='container'>
                 <div class='prices-plan'></div>
@@ -70,9 +83,11 @@
                 <div class='prices-plan'></div>
             </div>
         </section>
+
         <section class='contact'>
             <form></form>
         </section>
+
         <footer class='main-footer'></footer>
     </div>
 </body>
