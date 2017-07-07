@@ -8,8 +8,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+    <script src="js/scripts.js"></script>
     <title>Sit on Chair</title>
 </head>
 <body>
@@ -45,16 +46,32 @@
             <div class='container'>
                 <div class='main-slider'>
                     <button class="main-slider-button-L">&lt</button><!--absolute-->
-                    <div class="main-slider-content"><!--relative-->
-                        <div class='main-slider-image'>
-                            <img src="img/black_chair.png">
+
+                            <div class="main-slider-content main-slider-content-1"><!--relative-->
+                                <div class='main-slider-image'>
+                                    <img src="img/black_chair.png">
+                                </div>
+                                <div class='main-slider-text'>
+                                    <h2 class='main-slider-title'>Sit <span>on</span> our <span>chair</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href='' class='page-sect-title-button'>Zobacz więcej</a>
+                                </div>
+                            </div>
+                            <div class="main-slider-content main-slider-content-2"><!--relative-->
+                                <div class='main-slider-image'>
+                                    <img src="img/red_chair.png">
+                                </div>
+                                <div class='main-slider-text'>
+                                    <h2 class='main-slider-title'>Sit <span>on</span> our <span>chair</span></h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+                                    <a href='' class='page-sect-title-button'>Zobacz więcej</a>
+                                </div>
+
+                            </div>
                         </div>
-                        <div class='main-slider-text'>
-                            <h2 class='main-slider-title'>Sit <span>on</span> our <span>chair</span></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-                            <a href='' class='page-sect-title-button'>Zobacz więcej</a>
-                        </div>
+
                     </div>
+
                     <button class="main-slider-button-R">&gt</button><!--absolute-->
                 </div>
             </div>
@@ -62,33 +79,131 @@
 
         <section class='products'>
             <div class='container'>
-                <div class='main-section-box'>
-                    <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box1_img.jpg">
+                <div class='products-box'>
+                    <div class='main-section-box'>
+                        <div class='main-section-box-bar'>
+                            <h4> Chair <span>Clair</span></h4>
+                        </div>
+                        <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box1_img.jpg">
+                    </div>
                 </div>
-                <div class='main-section-box'>
-                    <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box2_img.jpg">
+                <div class='products-box'>
+                    <div class='main-section-box'>
+                        <div class='main-section-box-bar'>
+                            <h4> Chair <span>Margarita</span></h4>
+                        </div>
+                        <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box2_img.jpg">
+                    </div>
                 </div>
-                <div class='main-section-box'>
-                    <h3>FInd all imputs</h3>
-                    <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
-                    <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
+                <div class='products-box'>
+                    <!-- <div class='main-section-box main-section-box-img'>
+                        <div class='main-section-box-bar'>
+                            <h4> Chair <span>Margarita</span></h4>
+                        </div>
+                        <img src="/Users/izabela/Desktop/coderslab/sitOnChair/img/box2_img.jpg">
+                    </div> -->
+                    <div class='main-section-box main-section-box-text' id="main-section-box-3">
+                        <h3><span>Find all imputs    </span></h3>
+                        <p>Finds all inputs that are not checked and highlights the next sibling span. Notice there is no change when clicking the checkboxes since no click events have been linked.</p>
+                        <p>Notice there is no change when clicking the checkboxes since no click events have been</p>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class='prices'>
-            <div class='container'>
-                <div class='prices-plan'></div>
-                <div class='prices-plan'></div>
-                <div class='prices-plan'></div>
-            </div>
+          <div class="prices-content container">
+            <article class="prices-content-article">
+              <h2 class="prices-content-pricing">Cennik</h2>
+              <ul class="prices-content-prices">
+                <li class="prices-content-prices-basic">
+                  <h3>Basic Plan</h3>
+                  <ul class="prices-content-prices-basic-details">
+                    <li><sub>85</sub><sup>99</sup> <span>PLN/MSC</span></li>
+                    <li>Zakup towaru + dowóz</li>
+                    <li>Serwis</li>
+                    <li><button>Dołącz</button></li>
+                  </ul>
+                </li>
+                <li class="prices-content-prices-standard">
+                  <h3>Standard Plan</h3>
+                  <ul class="prices-content-prices-basic-details">
+                    <li><sub>95</sub><sup>99</sup> <span>PLN/MSC</span></li>
+                    <li>Zakup towaru + dowóz</li>
+                    <li>Serwis</li>
+                    <li>Gwarancja 5 lat</li>
+                    <li><button>Dołącz</button></li>
+                  </ul>
+                </li>
+                <li class="prices-content-prices-advenced">
+                  <h3>Advenced Plan</h3>
+                  <ul class="prices-content-prices-basic-details">
+                    <li><sub>211</sub><sup>00</sup> <span>PLN/MSC</span></li>
+                    <li>Zakup towaru + dowóz</li>
+                    <li>Serwis</li>
+                    <li>Gwarancja 6 lat</li>
+                    <li>Porady projektanta</li>
+                    <li><button>Dołącz</button></li>
+                  </ul>
+                </li>
+              </ul>
+            </article>
+          </div>
         </section>
 
         <section class='contact'>
-            <form></form>
+            <div class="contact-content container">
+            <h2 class="contact-content-title">Kontakt</h2>
+            <div class="contact-content-form">
+              <form action="">
+                <div class="form-content-left">
+                    <div class="row ">
+                      <label for="name"></label>
+                      <input type="text" id="name" name="name" placeholder="Imię">
+                    </div>
+                    <div class="row">
+                      <label for="email"></label>
+                      <input type="text" id="email" name="email" placeholder="email">
+                    </div>
+                    <div class="row">
+                      <label for="message"></label>
+                      <textarea type="text" rows="3" id="message" name="message" placeholder="Wiadomość"></textarea>
+                    </div>
+                  </div>
+                  <div class="form-content-right">
+                    <div class="row form-picture"></div>
+                    <div class="row">
+                      <input type="checkbox" id="consent" name="consent">
+                      <label for="consent"><span></span><p>Zgadzam się na przetwarzanie danych osobowych</p></label>
+                    </div>
+                    <div class="row">
+                      <label for="send"></label>
+                      <button type="submit">Wyślij</button>
+                    </div>
+                  </div>
+              </form>
+            </div>
+          </div>
         </section>
 
-        <footer class='main-footer'></footer>
+        <footer class='footer'>
+            <div class="footer-content container">
+            <div class="left-content">
+              <p>Copyright 2017 | All Rights Reserved - Sit On Chair<p>
+            </div>
+            <div class="right-content">
+              <ul class="footer-content-socialmedia">
+                <li><a href="#"><img src="images/flickr.png" alt="Flickr"></a></li>
+                <li><a href="#"><img src="images/vimeo.png" alt="Vimeo"></a></li>
+                <li><a href="#"><img src="images/pinterest.png" alt="Pinterest"></a></li>
+                <li><a href="#"><img src="images/twitter.png" alt="Twitter"></a></li>
+              </ul>
+              <a href="#" class="footer-content-logo">
+                <h2>Sit <span>on</span> Chair</h2>
+              </a>
+            </div>
+          </div>
+        </footer>
     </div>
 </body>
 </html>

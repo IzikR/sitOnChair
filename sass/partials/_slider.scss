@@ -1,0 +1,117 @@
+/* ======================================================== */
+/* section with (potential) slider */
+/* ======================================================== */
+.main-slider-big{
+  width: 100%;
+  background: #f8f9fa;
+    background: -webkit-linear-gradient(#f8f9fa 0%, #d2d1db 100%);
+    background: -o-linear-gradient(#f8f9fa 0%, #d2d1db 100%);
+    background: linear-gradient(#f8f9fa 0%, #d2d1db 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8f9fa', endColorstr='#d2d1db',GradientType=0 );
+    display: inline-block;
+}
+.main-slider{
+    position: relative;
+     height: 500px;
+}
+.main-slider-button-L{
+    width:40px;
+    height: 500px;
+    position: absolute;
+    background: transparent;
+    border: 0px solid transparent;
+    font-size: 50px;
+    vertical-align: middle;
+    color: rgba(0, 200, 170, 1);
+    outline: none;
+    left:0;
+    top:0;
+
+
+}
+.main-slider-button-R{
+    width:40px;
+    height: 500px;
+    position: absolute;
+    background: transparent;
+    border: 0px solid transparent;
+    font-size: 50px;
+    vertical-align: middle;
+    color: rgba(0, 200, 170, 1);
+    outline: none;
+    text-align: right;
+    right: 0;
+    top: 0;
+
+
+}
+.main-slider-content{
+    display: flex;
+    justify-content: space-around;
+}
+.main-slider-image {
+    width: 50%;
+    float: left;
+    // vertical-align: middle;
+    // margin-top: 70px;
+}
+.main-slider-image img{
+    justify-content: center;
+    align-items:center;
+    vertical-align:middle;
+}
+
+.main-slider-text{
+    width: 50%;
+    float: right;
+    padding: 100px;
+}
+.main-slider-text p{
+    text-align: center;
+}
+.main-slider-text h2{
+    text-align: center;
+}
+.main-slider .container{
+    position:relative;
+}
+.main-slider-title{
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.main-slider-title span{
+    color: rgba(0, 200, 170, 1);
+}
+.page-sect-title-button{
+    display: inline-block;
+    width: 200px;
+    height: 70px;
+    background-color: rgba(0, 200, 170, 1);
+    color: #fff;
+    font-size: 18px;
+    margin-top: 50px;
+    margin-left: 65px;
+    position: absolute;
+    padding: 10px;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 5px 5px 0 0;
+    text-decoration: none;
+    padding: 20px;
+    outline: none;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+
+//slider functionality:
+// .main-slider-content-1{
+//     display: block;
+// }
+
+.main-slider-content-1{
+    display: block;
+}
+.main-slider-content-2{
+    display: none;
+}

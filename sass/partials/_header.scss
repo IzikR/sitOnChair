@@ -1,0 +1,80 @@
+/* ======================================================== */
+/* header */
+/* ======================================================== */
+.page-header{
+    background-color: black;
+    height: 40px;
+
+}
+.page-logo{
+    float: left;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 40px;
+}
+.page-logo span{
+    color: rgba(0, 200, 170, 1);
+    font-size: 12px;
+    font-weight: 700;
+}
+.page-nav{
+    float: right;
+
+}
+.page-nav ul{
+    text-align: right;
+}
+.page-nav li{
+    display: inline-block;
+    position:relative;
+}
+
+.page-nav li a{
+    text-decoration: none;
+    display:block;
+    padding: 0 20px;
+    line-height: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+.page-nav-sublist{
+    position: absolute;
+    top: 45px;
+    left: -10px;
+    background: #000;
+    width: 150px;
+    padding: 10px 0;
+    z-index: 1;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s opacity, 0.5s top;
+}
+.page-nav-sublist:before{
+    content:"";
+    width:0;
+    height:0;
+    border: 10px solid transparent;
+    border-bottom-color: #000;
+    margin-left: -10px;
+    position: absolute;
+    left: 50%;
+    top: -20px;
+}
+.page-nav-sublist li{
+    display: block;
+    text-align: left;
+}
+.page-nav-sublist li a{
+    text-transform: none;
+    font-weight: normal;
+    line-height: 32px;
+}
+.page-nav li:hover .page-nav-sublist{
+    opacity: 1;
+    visibility: visible;
+    top: 55px;
+}
